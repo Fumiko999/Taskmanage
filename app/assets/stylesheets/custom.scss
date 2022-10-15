@@ -23,6 +23,14 @@ textarea {
   margin-bottom: 10px;
 }
 
+.btn-form {
+  margin-top: 10px;
+}
+
+.label-form {
+  margin-top: 5px;
+}
+
 /* タイポグラフィ */
 
 h1, h2, h3, h4, h5, h6 {
@@ -43,6 +51,7 @@ h2 {
   text-align: center;
   font-weight: normal;
   color: #777;
+  
 }
 
 p {
@@ -52,20 +61,88 @@ p {
 
 /* ヘッダー */
 
+
+#header {
+  background-color: teal;
+}
+
+
 #logo {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: #fff;
-  text-transform: uppercase;
+  font-style: italic;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
+  color: #fff;
 }
 
 #logo:hover {
   color: #fff;
   text-decoration: none;
+}
+
+li .header-list{
+  color: #fff !important;
+  background-color: teal;
+  font-weight: bold;
+}
+
+li .header-list:hover {
+  color: gray !important;
+  text-decoration: none;
+}
+
+li .dropdown-header {
+  background-color:rgba(200,200,200,0.5);
+  font-weight: bold;
+}
+
+
+
+li .dropdown-title{
+  background-color: teal;
+}
+
+.dropdown-toggle 
+.navbar-defalt
+.navbar-nav>li>a {
+  color: #777;
+}
+
+
+.navbar-nav>li>a {
+padding-top: 15px;
+padding-bottom: 15px;
+}
+
+.navbar-nav>li>a {
+  line-heiht: 20px
+}
+
+.nav>li>a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+
+
+
+
+.btn {
+  display: inline-block;
+  border: 1px solid;
+}
+.btn-lg {
+  padding: 10px;
+  font-size: 18px;
+  line-height: 1.3333333;
+} 
+  .btn-primary {
+  color: #fff;
+  background-color: primary;
+  border-color: primary;
 }
 
 /* デバッグウインドウ */
@@ -95,4 +172,9 @@ p {
   .form-control {
     color: $state-danger-text;
   }
+}
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    color: #fff;
+    background-color: teal;
 }

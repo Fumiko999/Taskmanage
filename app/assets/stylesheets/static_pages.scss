@@ -1,3 +1,22 @@
-// Place all the styles related to the StaticPages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#top-main-title {
+  font-style: italic;
+  font-weight: bold;
+}
+ 
+#top-main {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.btn-lg {
+  padding:10px 16px;
+  font-size:18px;
+  line-heigth: 1.3333333;
+  border-radius: 6px;
+}
+
+.btn-success {
+  color: #fff;
+  background-color: #449D44;
+  border-color: #4cae4c;
+}
