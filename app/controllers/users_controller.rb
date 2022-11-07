@@ -1,5 +1,10 @@
 class UsersController < ApplicationController
+  before_action :set_user, only: [:show, :edit, :update]
+  before_action :logged_in_user, only: [:index, :show, :edit, :update]
+  before_action :correct_user, only: [:edit, :update]
+  
   def index
+    @user = Task.all
   end
   
   def show
@@ -27,3 +32,18 @@ class UsersController < ApplicationController
       params.require(:user).permit(:name, :email, :password, :password_confirmation)
     end
 end
+    
+    def set_user
+      @user = User.find(params[:id])
+    end 
+    
+    def logged_in_user
+      unless logged_in?
+        flash[:danger] = "ログインして下さい。"
+        redirect_to login_url
+      end 
+    end
+ 
+    def correct_user
+      redirect_to(root_url) unless current_user?(@user)
+    end
